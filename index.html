@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <noscript>Включите JavaScript для корректной работы сайта</noscript>
+    <div class="mainbox">
+        <h1><svg width="40" height="35" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_4669_138)">
+            <rect x="1" y="2" width="14" height="13" rx="2" stroke="black" stroke-width="2"/>
+            <rect x="1" y="4" width="14" height="2" fill="black"/>
+            <rect x="3" width="2" height="2" rx="1" fill="black"/>
+            <rect x="11" width="2" height="2" rx="1" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_4669_138">
+            <rect width="16" height="16" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>Календарь
+        </h1>
+    </div>
+        <!--<div class="background">
+            <div class=""></div>
+            <div class="calendar-wrapper">
+                <button id="btnPrev" type="button">Предыдущий</button>
+                <button id="btnNext" type="button">Следующий</button>
+            <div id="divCal"></div>
+        </div>-->
+        <div class="calendar">
+            <div class="header">
+                <button id="prevBtn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="monthYear" id="monthYear"></div>
+                <button id="nextBtn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="days">
+                <div class="day">Пн</div>
+                <div class="day">Вт</div>
+                <div class="day">Ср</div>
+                <div class="day">Чт</div>
+                <div class="day">Пт</div>
+                <div class="day">Сб</div>
+                <div class="day">Вс</div>
+            </div>
+                <div class="dates" id="dates"></div>
+            </div>
+            <div class="phrase">
+                <p>Сегодня ваш день!<br>
+                    <span></span></p>
+            </div>
+    <div class="copyright">
+        <p>Подготовил Марченко М.Д.</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+body {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #EECC51, #203C58);
+.mainbox {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    font-size: 22px;
+    padding-left: 40px;
+    user-select: none;
+    background-color: white;
+    }
+.calendar {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.monthYear {
+    text-align: center;
+    font-weight: 700;
+    width: 200px;
+
+}
+
+.header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px #cfcfcf;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.day {
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.date:hover,
+.date.active {
+    background: #EECC51;
+    color: white;
+}
+
+.date.inactive {
+    color: #cfcfcf;
+}
+/*.calendar-wrapper {
+    width: 360px;
+    margin: 3em auto;
+    padding: 2em;
+    border: 1px solid #dcdcff;
+    border-radius: 5px;
+    background: white;
+}
+*/
+
+.phrase {
+    position: absolute;
+    top: 730px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    text-shadow: #EECC51 1px 0 10px;
+}
+/*
+span::before {
+    content: '';
+    animation: change 15s infinite;
+}
+
+@keyframes motivation {
+    0% {
+        content: 'Привет';
+    }
+    10% {
+        content: '2';
+    }
+    20% {
+        content: '3';
+    }
+    30% {
+        content: '4';
+    }
+    40% {
+        content: '5';
+    }
+    50% {
+        content: '6';
+    }
+    60% {
+        content: '7';
+    }
+    70% {
+        content: '8';
+    }
+    80% {
+        content: '9';
+    }
+    90% {
+        content: '10';
+    }
+    100% {
+        content: '11';
+    }
+}
+*/
+
+.copyright {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding-right: 10px;
+    background-color: white;
+}
+}
