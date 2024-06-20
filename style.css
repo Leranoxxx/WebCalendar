@@ -22,9 +22,10 @@ body {
     user-select: none;
     background-color: white;
     }
+    
 .calendar {
     width: 500px;
-    height: auto;
+    height: 420px;
     display: flex;
     flex-direction: column;
     padding: 10px;
